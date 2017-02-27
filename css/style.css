@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;	
+}
+
+.wrapper {
+	flex: 1;	
+}
+
+.title {
+	background-color: #000000;	
+	color: #ffffff;
+	overflow: auto;
+}
+
+nav {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline; 
+		
+}
+
+nav a{
+    display:inline-block;
+}
+
+.subNav {
+	visibility: hidden;
+    height: 0;
+    display: none;	
+}
+
+.subNav:focus {
+    visibility: visible;
+    height: auto;
+    display: block;
+}
+
+
+.footer {
+	background-color: #000000;
+	color: #ffffff;	
+	height: 70px;
+}
