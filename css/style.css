@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+ /* ==========================================================================
+    BASE STYLES
+    ========================================================================== */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -8,44 +13,93 @@ body {
 }
 
 .wrapper {
-	flex: 1;	
+	flex: 5;	
 }
 
 .title {
 	background-color: #000000;	
 	color: #ffffff;
 	overflow: auto;
+	flex: 1;	
 }
+
+.footer {
+	background-color: #000000;
+	color: #ffffff;	
+	flex: 1;
+	align-content: center;
+}
+
+
+ /* ==========================================================================
+    Navagation 
+    ========================================================================== */
 
 nav {
 	text-align: center;
 }
 
+
 li {
 	list-style: none;
-	display: inline; 
-		
+	display: block;
+	margin: 5%; 
 }
 
 nav a{
     display:inline-block;
 }
 
-.subNav {
-	visibility: hidden;
-    height: 0;
-    display: none;	
-}
 
-.subNav:focus {
-    visibility: visible;
-    height: auto;
-    display: block;
-}
-
-
-.footer {
-	background-color: #000000;
-	color: #ffffff;	
-	height: 70px;
-}
+ /* ==========================================================================
+    Contact Page Form
+    ========================================================================== */
+ 
+ .submitForm {
+	 display: inline-block;
+ }
+ 
+ .useremail {
+	 width: 50%;
+ }
+ 
+ 
+ /* ==========================================================================
+    About Page Style
+    ========================================================================== */ 
+ 
+ .me {
+	display: inline-block;
+	width: 30%;
+ }
+ 
+ .aboutMe {
+	width: 60%;	 
+ }
+ 
+ 
+ /* ==========================================================================
+    Media 
+    ========================================================================== */
+	
+	@media only screen and (min-width: 994px) {
+	
+	.wrapper {
+	flex: 9;	
+	}
+	
+	.title {
+	flex: 1;	
+	}
+		
+	li {
+	list-style: none;
+	display: inline; 
+	}
+	
+	.footer {
+	flex: 1;	
+	}	
+	
+		
+	}
