@@ -21,23 +21,26 @@
 </nav>
 </header>
 <div class="wrapper">
-<p class="explainForm">If you want to stay up to date on what I am doing, or any deals, just fill this out and click join! If you have a comment or want to ask a question, fill out the form and hit the get back to me button. </p>
-<div class="submitForm">
-<form method="post">
 
-<label class="username">Name:</label>
-<input class="username" type="name" placeholder="Billy Joe">
 
-<label class="useremail">Email:
-<input class="useremail" type="email" placeholder="bjoe@me.com"></label>
-
-<label class="usercomment">Comment:
-<input class="usercomment" type="comment" placeholder="Tell me more!"></label>
-
-<button class="submitbutton" type="submit">JOIN!</button>
-<button class="commentbutton" type="submit">Get Back To Me!</button>
-</form>
+<form method="post" class="form">
+<h2>Contact Form</h2>
+<div>
+<label for="username" class="username">Name:</label>
+<input class="username" name="username" type="text" placeholder="Billy Joe">
 </div>
+<div>
+<label for="useremail" class="useremail">Email:</label>
+<input class="useremail" name="useremail" type="email" placeholder="bjoe@me.com">
+</div>
+<div>
+<label for="message" class="message">Comment:</label>
+<textarea name="message" for="message" placeholder="Talk to me"></textarea>
+</div>
+<div>
+<button class="submit" type="submit">Submit</button>
+</div>
+</form>
 </div>
 <footer class="footer"> &copy; 2017 Heather Barton</footer>
 

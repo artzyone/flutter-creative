@@ -10,7 +10,6 @@ $overlay.append($caption);
 
 $(".gallery img").click(function(event){
 event.preventDefault();
-console.log('hey')
 var imageLocation = $(this).attr("src");
 $img.attr("src", imageLocation);
 var captionText = $(this).attr("alt");

@@ -24,7 +24,7 @@ body {
 }
 
 .head {
-	font-family: 'Tangerine', cursive;
+	font-family: 'Tangerine', cursive, arial;
 	font-size: 500%;
 	color: #31C3EF;
 	margin: 1%;
@@ -51,14 +51,13 @@ nav {
 
 nav ul {
 	list-style: none;
-	margin: 0 10px;
+	display: block;
 	
 }
 
-nav li {
-    display:block;
+nav a{
+    display:inline-block;
 }
-
 
  
 /* ==========================================================================
@@ -66,8 +65,8 @@ nav li {
     ========================================================================== */
   
 .imgLong {
-	width: 40%;
-	margin: 5% 0;
+	width: 60%;
+	margin: 5% 0; 
  }
  
  ul li {
@@ -81,23 +80,30 @@ nav li {
     Contact Page Form
     ========================================================================== */
  
- .submitForm {
-	display: block; 
- }
- 
+label {
+width: 100px;
+text-align: right;
+margin-left: 2%;
+display: inline-block
+}
+
+.submit {
+margin-left: 15em;
+margin-top: 2em;
+} 
  
  /* ==========================================================================
     About Page Style
     ========================================================================== */ 
  
  .me {
-	padding: 0% 30%;
-	width: 20%;
+	padding: 2% 30%;
+	width: 30%;
  }
  
  .aboutMe {
 	width: 60%;
-	padding: 5% 10%;	 
+	padding: 1% 15%;	 
  }
  
  
@@ -127,10 +133,9 @@ nav li {
 	}
 	
 		
-	nav li {
+	li {
 	list-style: none;
-	display: inline-block;
-	padding: 2%; 
+	display: inline; 
 	}
 	
 	
@@ -139,17 +144,17 @@ nav li {
 	padding: 1% 5%;
 	}	
 	
+	.me {
+	width: 15%;
+ }
 	
 	
 	 /* ==========================================================================
     Gallery on Larger Screen
     ========================================================================== */
 	
-.imgLong {
-	width: 15%;
-	display: inline;
-	margin: 0;
-
+	.imgLong {
+	width: 15%; 
  }
 	
 	#overlay {
